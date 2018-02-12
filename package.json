@@ -1,0 +1,21 @@
+{
+  "name": "osa3-phonebook-backend",
+  "version": "0.0.1",
+  "description": "Backend for the phonebook react application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leo Kiiski <goalaleo@gmail.com> (https://github.com/goalaleo)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
+}
