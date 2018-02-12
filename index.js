@@ -6,7 +6,6 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 
 morgan.token('req-body', (req) => {
-  console.log("morgan will get as body:", req.body)
   return JSON.stringify(req.body)
 })
 
@@ -101,7 +100,6 @@ app.get("/info", (request, response) => {
 })
 
 const error = (request, response, next) => {
-  console.log('went to error logger')
   response.status(404).send({error: 'unknown endpoint'})
 }
 
